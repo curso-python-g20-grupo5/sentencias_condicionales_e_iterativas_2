@@ -1,2 +1,2 @@
-# sentencias_condicionales_e_iterativas_2
-Desafio sobre Sentencias Condicionales e Iterativas Parte II
+# Sentencias Condicionales e iterativas Parte II
+En este repositorio se presenta el desarrollo para la actividad sobre Sentencias Condicionales e Iterativas Parte II.
