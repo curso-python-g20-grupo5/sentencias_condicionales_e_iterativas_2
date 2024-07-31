@@ -31,6 +31,8 @@ Para entenderlo de una forma mucho más didáctica, el código se compone en tre
 
 ## Actividad 2
 
+![Home](imagenes/diagrama-primeros-auxilios.png)
+
 ## Actividad 3
 
 ## Autores y Autoras
