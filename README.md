@@ -31,9 +31,28 @@ Para entenderlo de una forma mucho más didáctica, el código se compone en tre
 
 ## Actividad 2
 
-Se nos solicita construir una aplicación interactiva con el usuario que permita indicar los pasos a seguir ante una emergencia, ésta debe cumplir el plan de primeros auxilios que se presenta en el siguiente diagrama:
+Se nos solicita construir una aplicación interactiva con el usuario que permita indicar los distintos pasos a seguir en tiempo real, dependiendo de su respuesta, ante una emergencia. Esta aplicación debe cumplir con el plan de primeros auxilios que se presenta en el siguiente diagrama:
 
 ![Home](imagenes/diagrama-primeros-auxilios.png)
+
+Esto será posible a través de un Ciclo While. Este tipo de ciclo permitirá, en un primer momento, consultar si la persona accidentada responde a estímulos. Dependendiendo de su respuesta la aplicación deberá finalizar el ciclo o continuar con éste en función del plan de primeros auxilios. Un ejemplo de ello es el siguiente: 
+
+```
+#Creación ciclo while para consultar si paciente responde estímulos
+while True: 
+    #creacion de variable paciente 
+    paciente= input('¿El paciente responde a estímulos?: ').lower()#input con funcion lower.() para asegurar entrada de texto en minusculas
+    if paciente != "si" and paciente != "no":
+        print("ingresa respuesta si o no")
+    else:
+        if paciente == "si":
+            print("Valorar la posibilidad de llevarlo al hospital más cercano")
+            break #utilizacion de break para dar fin al ciclo con esta respuesta
+        else:
+            paciente = input("Abrir la vía aérea. ¿Respira? (si/no): ").lower()#input con funcion lower.() para asegurar entrada de texto en minusculas
+```
+
+Si la persona accidentada responde a estímulos, la aplicación cerrará el ciclo, mediante un ```break```, comunicando al usuario valorar la posibilidad de llevar a la persona accidentada al hospital más cercano. Por el contrario, si la persona no responde a estímulos, la aplicación deberá emitir un mensaje que exprese abir la vía aérea y, en función de ello, consultar si la persona respira o no; dependiendo de su respuesta el programa irá continuando con el ciclo basado en el diagráma de primeros auxilios.
 
 ## Actividad 3
 
