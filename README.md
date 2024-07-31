@@ -55,6 +55,21 @@ while True:
 Si la persona accidentada responde a estímulos, la aplicación cerrará el ciclo, mediante un ```break```, comunicando al usuario valorar la posibilidad de llevar a la persona accidentada al hospital más cercano. Por el contrario, si la persona no responde a estímulos, la aplicación deberá emitir un mensaje que exprese abir la vía aérea y, en función de ello, consultar si la persona respira o no; dependiendo de su respuesta el programa irá continuando con el ciclo basado en el diagráma de primeros auxilios.
 
 ## Actividad 3
+Se pide elaborar un programa para determinar cuántos intentos son necesarios para encontrar cominaciones numéricas en minúscula. Por ello, el programa a presentar pide una contraseña al usuario y simula un ataque de fuerza bruta para adivinarla, contando el número de intentos necesarios. Cada intento consiste en comparar cada carácter de la contraseña con todas las letras minúsculas del alfabeto, uno por uno, hasta encontrar una coincidencia.
+Ante ello, se presentan los siguientes elementos: 
+
+- Se importa ```ascii_lowercase``` de la biblioteca string, que es una cadena que contiene todas las letras minúsculas del alfabeto inglés: 'abcdefghijklmnopqrstuvwxyz'.
+- Función ```fuerza_bruta```: esta función permite adivinar una contraseña mediante un ataque de fuerza bruta. Por consiguiente, ```password``` será el parametro que se busca adivinar.
+- La variable ```intentos``` iniciará su contador en 0
+- El bucle ```for i, char in enumerate(password):``` itera sobre cada carácter de la contraseña, con ```i``` como el índice y ```char``` como el carácter. 
+- El bucle interno ```for c in ascii_lowercase``` itera sobre cada letra del alfabeto minúsculo.
+- ```intentos += 1:``` incrementa el contador de intentos en 1 por cada letra que prueba.
+- En ```if c == char: break:``` Si la letra ```c``` coincide con el carácter actual ```char``` de la contraseña, se sale del bucle interno.
+- ```return intentos:``` devuelve el número total de intentos necesarios para adivinar todos los caracteres de la contraseña.  
+- Función ```main``` corresponde a la función principal que ejecuta el programa. Ésta pide al usuario ingresar la contraseña
+- Con la variable ```intentos = fuerza_bruta(password):``` se llama a la función ```fuerza_bruta``` con la contraseña ingresada y guarda el número de intentos necesarios para adivinarla.
+- Como salida ```print(f"La contraseña fue forzada en {intentos} intentos"):``` imprime el número de intentos necesarios para adivinar la contraseña.
+- Ejecución del programa: la condición asegura que ```main``` se ejecuta solo si el archivo se ejecuta directamente.
 
 ## Autores y Autoras
 
