@@ -24,7 +24,14 @@ Para nuestro trabajo ```mes``` corresponderá ```clave``` y ```venta``` correspo
 
 
 ### Solución (b)
+Esta solución corresponde a la transformación de un ciclo for a un python comprehension. Basicamente, se sigue manteniendo la estructura de un ciclo for, solo que los elementos que están identados al ciclo se presentan de manera inversa.
+Para entenderlo de una forma mucho más didáctica, el código se compone en tres partes: 1) ```clave```: ```valor```; 2) Ciclo for para un diccionario: 3) La condición del código. Esto queda representado de la siguiente manera:
 
+```resultado = {mes: valor for mes, valor in ventas.items() if valor > umbral}```
+
+## Actividad 2
+
+## Actividad 3
 
 ## Autores y Autoras
 
