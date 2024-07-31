@@ -31,6 +31,8 @@ Para entenderlo de una forma mucho más didáctica, el código se compone en tre
 
 ## Actividad 2
 
+Se nos solicita construir una aplicación interactiva con el usuario que permita indicar los pasos a seguir ante una emergencia, ésta debe cumplir el plan de primeros auxilios que se presenta en el siguiente diagrama:
+
 ![Home](imagenes/diagrama-primeros-auxilios.png)
 
 ## Actividad 3
