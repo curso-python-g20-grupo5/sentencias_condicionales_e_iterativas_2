@@ -3,7 +3,7 @@ En este repositorio se presenta el desarrollo para la actividad sobre Sentencias
 
 ## Descripción del proyecto
 
-Este repositorio está compuesto por dos archivos: 
+Este repositorio está compuesto por tres archivos: 
   - mayor_a_version1.py: este archivo corresponde a la solución (a) de la actividad 1
   - mayor_a_version2.py: este archivo corresponde a la solución (b) de la actividad 1
   - primeros_auxilios.py: este archivo corresponde a la solución de la actividad 2
